@@ -4,7 +4,9 @@
  * 
  * Author: MizoPro
  * 
- * Licensed under the MIT License
+ * Licensed under the Apache License 2.0
+ * See <https://apache.org/licenses/LICENSE-2.0>
+ * 
  * All rights are reserved®
  * 
  */
