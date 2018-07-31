@@ -1,0 +1,94 @@
+/*!
+ *
+ * My Portfolio Theme
+ *
+ * - Name :: Light Theme v1.0.0
+ * - Designer :: MizoPro
+ *
+ *
+ * Licensed under the MIT License
+ * All rights are reserved®
+ *
+ */
+
+
+/* =====
+   SETUP
+   ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #FFF;
+    font-family: Tahoma, Verdana, Geneva, sans-serif;
+    font-size: 1.1em;
+    color: #333;
+}
+
+@media only screen and (min-width: 760px) {
+
+html {
+    font-size: 10px;
+}
+
+}
+
+
+
+/* ======
+   HEADER
+   ====== */
+
+header {
+
+}
+
+
+
+
+/* ===
+   NAV
+   === */
+
+nav {
+
+}
+
+
+
+/* =========
+   CONTAINER
+   ========= */
+
+#container {
+
+}
+
+#main-content {
+
+}
+
+#container p {
+
+}
+
+
+
+/* ======
+   FOOTER
+   ====== */
+
+footer {
+
+}
+
+footer .author {
+
+}
