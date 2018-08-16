@@ -27,21 +27,65 @@ html {
     font-size: 62.5%;
 }
 
+@media only screen and (min-width: 760px) {
+
+    html {
+        font-size: 10px;
+    }
+
+}
+
 body {
     background-color: #FFF;
-    font-family: Tahoma, Verdana, Geneva, sans-serif;
+    font-family: Tahoma, Verdana, sans-serif;
     font-size: 1.1em;
     color: #333;
 }
 
-@media only screen and (min-width: 760px) {
-
-html {
-    font-size: 10px;
+ul, ol {
+    list-style-type: none;
 }
 
+img {
+    vertical-align: middle;
+    border: 0;
 }
 
+a, a:visited, a:active {
+    text-decoration: none;
+    color: #306090;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #4080A0;
+}
+
+@-webkit-keyframes rotate-bg {
+    0%   { background: linear-gradient(to right, #E051A0, #F15C41); }
+    40%  { background: linear-gradient(162deg, #E051A0, #F15C41); }
+    80%  { background: linear-gradient(234deg, #E051A0, #F15C41); }
+    100% { background: linear-gradient(to left, #E051A0, #F15C41); }
+}
+
+@keyframes rotate-bg {
+    0%   { background: linear-gradient(to right, #E051A0, #F15C41); }
+    40%  { background: linear-gradient(162deg, #E051A0, #F15C41); }
+    80%  { background: linear-gradient(234deg, #E051A0, #F15C41); }
+    100% { background: linear-gradient(to left, #E051A0, #F15C41); }
+}
+
+#wrapper {
+    margin: auto;
+}
+
+#inner-wrapper {
+    margin: auto;
+}
+
+#main {
+    margin: 0 2em;
+}
 
 
 /* ======
@@ -49,43 +93,167 @@ html {
    ====== */
 
 header {
-
+    margin: auto;
 }
 
+header .header__inner {
+    margin: 1em 1em 2em;
+}
 
+header .logo {
+    display: inline-block;
+    margin: 0 2em;
+    padding: .2em;
+    background: linear-gradient(to right, #E051A0, #F15C41);
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: all 400ms ease-out 0s;
+    -moz-transition: all 400ms ease-out 0s;
+    -o-transition: all 400ms ease-out 0s;
+    transition: all 400ms ease-out 0s;
+}
+
+header .logo:hover {
+    padding: .4em;
+    animation-name: rotate-bg;
+    animation-duration: 400ms;
+    animation-iteration-count: infinite;
+}
+
+header .logo img {
+    max-width: 12em;
+}
+
+header .title {
+    margin-top: 1em;
+}
+
+header .title h1 {
+    border-bottom: 1px solid #DDD;
+}
+
+header #page-title {
+    font-family: 'Raleway', Tahoma, Verdana, sans-serif;
+    font-size: 3em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    color: #444;
+}
 
 
 /* ===
    NAV
-   === */
+   === *
 
 nav {
 
 }
 
 
-
 /* =========
    CONTAINER
    ========= */
 
+
 #container {
-
+    margin: 2em auto;
+    text-align: center;
+    font-family: 'Raleway', Tahoma, Verdana, sans-serif;
+    font-size: 1.4em;
 }
 
-#main-content {
-
+.section {
+    margin: 1.5em auto;
 }
 
-#container p {
-
+.name {
+    text-align: left;
 }
 
+.name h2 {
+    font-size: 1.9em;
+}
 
+.name h2 em {
+    font-style: normal;
+    color: #777;
+}
+
+.bio {
+    font-size: 1.5em;
+}
+
+.tags {
+    font-family: Consolas, 'Lucida Console', 'Courier New', monospace;
+    font-size: 1rem;
+}
+
+.tags li {
+    display: inline-block;
+    margin: .25em;
+    padding: .25em;
+    background-color: #789;
+    border-radius: .4em;
+    color: #FFF;
+    cursor: pointer;
+    -webkit-transition: all 400ms ease-out 0s;
+    -moz-transition: all 400ms ease-out 0s;
+    -o-transition: all 400ms ease-out 0s;
+    transition: all 400ms ease-out 0s;
+}
+
+.tags li.active {
+    background-color: #567;
+    font-size: 1.4em;
+}
+
+.social {
+    margin: 4em 2em 1em;
+    padding: 1em;
+    background-color: #D1F1F7;
+}
+
+.social .label {
+    margin-bottom: 2em;
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 1.1rem;
+}
+
+.social a {
+    -webkit-transition: all 500ms ease-out 0s;
+    -moz-transition: all 500ms ease-out 0s;
+    -o-transition: all 500ms ease-out 0s;
+    transition: all 500ms ease-out 0s;
+}
+
+.social a:hover {
+    transform: rotate(360deg);
+}
+
+.social a:hover .fa-stack-2x {
+    opacity: .8;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1em 2em;
+    background: linear-gradient(to right, #E051A0, #F15C41);
+    border-radius: .5em;
+    font-weight: 700;
+    color: #FAFAFA;
+    cursor: pointer;
+}
+
+.btn:hover {
+    animation-name: rotate-bg;
+    animation-duration: 400ms;
+    animation-iteration-count: infinite;
+}
 
 /* ======
    FOOTER
-   ====== */
+   ====== *
 
 footer {
 
@@ -93,4 +261,4 @@ footer {
 
 footer .author {
 
-}
+}*/

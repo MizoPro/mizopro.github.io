@@ -2,7 +2,7 @@
 
 Hello, My name is **Hamza**.
 
-This is my *portfolio* repository on *GitHub*.
+This is my *portfolio* repository on *GitHub*, available at https://mizopro.github.io
 
 ### State
 > currently, under construction

@@ -12,25 +12,33 @@
  */
 
 /**
- * @const {Object} MP MizoPro's public info and URLs
+ * @const {Array} TAGS My interests and skills
  * 
  */ 
-const MP = window.MP = window.MP || {};
+var TAGS = window.TAGS = window.TAGS || [
+    'programming', 'development', 'design', 'reading', 'drawing', 'python', 'C/C++', 'Java', 'JavaScript', 'HTML5/CSS3', 'ruby', 'go', 'C#', 'git', 'php', 'mathematics', 'algebra', 'cryptography', 'engineering'
+];
 
-window.MP.nickname = "MizoPro";
-window.MP.firstName = "Hamza";
-window.MP.lastName = "Belhadj Ahmed";
-window.MP.social = {
-    orcid:    'https://orcid.org/0000-0001-9668-9225',
-    github:   'https://github.com/MizoPro', 
-    twitter:  'https://twitter.com/MizoPro', 
-    linkedin: 'https://linkedin/in/mizopro'
-};
 
 /**
  * Main entry
  * 
  */
 $(document).ready(function() {
-    //NULL
+
+    (function() {
+        var ul = $('<ul></ul>');
+        window.TAGS.forEach(function(tag) {
+            var li = $('<li>' + tag + '</li>');
+            li.click(function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (li.hasClass('active')) li.removeClass('active');
+                else $('.js-tags li').removeClass('active') && li.addClass('active');
+            });
+            ul.append(li);
+        });
+        $('.js-tags').append(ul);
+    })();
+
 });
